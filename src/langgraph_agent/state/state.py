@@ -7,4 +7,4 @@ class State(TypedDict):
 
     """
 
-    message: Annotated[List,add_messages]
+    messages: Annotated[List,add_messages]
