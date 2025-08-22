@@ -22,10 +22,10 @@ def load_langgraph_agenticai_app():
         return
 
     # Text input for user message
-    # if st.session_state.IsFetchButtonClicked:
-    #     user_message = st.session_state.timeframe 
-    # else :
-    user_message = st.chat_input("Enter your message:")
+    if st.session_state.IsFetchButtonClicked:
+        user_message = st.session_state.timeframe 
+    else :
+        user_message = st.chat_input("Enter your message:")
 
     if user_message:
             try:
@@ -57,10 +57,3 @@ def load_langgraph_agenticai_app():
 
             except Exception as e:
                  raise ValueError(f"Error Occurred with Exception : {e}")
-            
-
-        
-
-   
-
-    
